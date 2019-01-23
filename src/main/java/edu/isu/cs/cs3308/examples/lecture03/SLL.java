@@ -1,10 +1,6 @@
 package edu.isu.cs.cs3308.examples.lecture03;
 
-public class SLL<E> implements List<E> {
-
-    protected Node<E> head;
-    protected Node<E> tail;
-    protected int size = 0;
+public class SLL<E> extends AbstractList<E> {
 
     @Override
     public E first() {
@@ -44,16 +40,6 @@ public class SLL<E> implements List<E> {
     @Override
     public E get(int index) {
         return null;
-    }
-
-    @Override
-    public int size() {
-        return 0;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
     }
 
     @Override
