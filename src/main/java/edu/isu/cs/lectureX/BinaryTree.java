@@ -4,7 +4,7 @@ import com.google.common.collect.Lists;
 
 import java.util.List;
 
-public class BinaryTree<E> implements Tree<E> {
+public class BinaryTree<E> {
 
     private BinaryTreeNode<E> root;
 
@@ -35,7 +35,6 @@ public class BinaryTree<E> implements Tree<E> {
         }
     }
 
-    @Override
     public void insert(E data) {
         if (root == null) {
             root = new BinaryTreeNode<E>(data);
@@ -61,7 +60,6 @@ public class BinaryTree<E> implements Tree<E> {
         }
     }
 
-    @Override
     public E remove(Node<E> node) {
         if (node instanceof BinaryTreeNode) {
             BinaryTreeNode<E> btn = (BinaryTreeNode<E>)node;
@@ -77,27 +75,23 @@ public class BinaryTree<E> implements Tree<E> {
         return node.getValue();
     }
 
-    @Override
     public List<E> children(Node<E> n) {
-
+        return null;
     }
 
-    @Override
+
     public E parent(Node<E> n) {
         return null;
     }
 
-    @Override
     public void traverse() {
 
     }
 
-    @Override
     public int height() {
         return 0;
     }
 
-    @Override
     public int depth() {
         return 0;
     }

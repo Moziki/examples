@@ -16,6 +16,7 @@ public class CLI {
     }
 
     private static int eval(String eval) {
+        return 0;
     }
 
     private static String read() {
